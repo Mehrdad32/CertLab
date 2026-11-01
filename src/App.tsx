@@ -225,6 +225,6 @@ export default function App(){
       <div><span><Icon name="shield"/></span><b>تحلیل دقیق</b><small>زمان اعتبار، SAN و SHA-256</small></div>
     </section>
     <div className="safety-note"><Icon name="alert" size={19}/><p><strong>نکته امنیتی:</strong> اعتبار زمانی یا تأیید امضای CSR به معنی اعتماد مرورگر به گواهی نیست. بررسی زنجیره اعتماد، نام میزبان، وضعیت ابطال (OCSP/CRL) و اتصال زنده سرور در این ابزار انجام نمی‌شود.</p></div>
-    <footer className="footer"><span>CertLab · ساخته‌شده توسط <a href="https://mehrdad32.ir/" target="_blank" rel="noreferrer">Mehrdad32</a></span><div><a href="https://github.com/Mehrdad32/CertLab" target="_blank" rel="noreferrer">GITHUB / SOURCE</a><span>·</span><a href="https://tarikhdaar.mehrdad32.ir/" target="_blank" rel="noreferrer">تاریخ‌دار</a></div></footer>
+    <footer className="footer"><span>CertLab · ساخته‌شده توسط <a href="https://mehrdad32.ir/" target="_blank" rel="noreferrer">Mehrdad32</a></span><div><a href="https://github.com/Mehrdad32/CertLab" target="_blank" rel="noreferrer">GITHUB / SOURCE</a><span>·</span><a href="https://mehrdad32.ir/fa/projects" target="_blank" rel="noreferrer">سایر پروژه‌ها</a></div></footer>
   </main>
 }
