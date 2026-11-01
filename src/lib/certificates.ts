@@ -123,7 +123,7 @@ function inspectExtensions(items: Extension[]) {
   const eku = items.find(e => e.type === '2.5.29.37')
   try {
     if (eku) extendedKeyUsages = new ExtendedKeyUsageExtension(eku.rawData).usages
-      .map(oid => ekuNames[oid] ?? oid)
+      .map(oid => ekuNames[String(oid)] ?? String(oid))
   } catch { /* unknown encoding */ }
   return { ca, keyUsages, extendedKeyUsages }
 }
