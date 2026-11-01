@@ -3,20 +3,27 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {"dev":"vite","test":"vitest run","build":"tsc -b && vite build","preview":"vite preview"},
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest run",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@fontsource-variable/vazirmatn":"5.3.0",
-    "@peculiar/x509":"3.1.0",
-    "react":"19.3.0",
-    "react-dom":"19.3.0",
-    "reflect-metadata":"0.2.2"
+    "@fontsource-variable/vazirmatn": "5.3.0",
+    "@peculiar/x509": "3.1.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "reflect-metadata": "0.2.2",
+    "@peculiar/asn1-schema": "3.0.0",
+    "asn1js": "4.0.0"
   },
   "devDependencies": {
-    "@types/react":"19.3.0",
-    "@types/react-dom":"19.3.0",
-    "@vitejs/plugin-react":"6.1.1",
-    "typescript":"7.0.2",
-    "vite":"8.3.1",
-    "vitest":"5.0.0"
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.0"
   }
 }
