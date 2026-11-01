@@ -131,7 +131,7 @@ export default function App(){
           <button type="button" role="tab" aria-selected={mode==='paste'} className={mode==='paste'?'active':''} onClick={()=>{reset();setMode('paste')}}>متن PEM</button>
         </div>
         {mode==='file'?<>
-          <input ref={fileInput} className="sr-only" type="file" accept=".pem,.crt,.cer,.csr,.der,.txt,.p7b,.p7c" aria-label="انتخاب گواهی یا CSR" onChange={e=>void handleFile(e.target.files?.[0])}/>
+          <input ref={fileInput} className="sr-only" type="file" accept=".pem,.crt,.cer,.csr,.der,.txt" aria-label="انتخاب گواهی یا CSR" onChange={e=>void handleFile(e.target.files?.[0])}/>
           <div className={'dropzone'+(dragging?' dragging':'')}
             onDragOver={e=>{e.preventDefault();setDragging(true)}}
             onDragLeave={e=>{e.preventDefault();setDragging(false)}}
