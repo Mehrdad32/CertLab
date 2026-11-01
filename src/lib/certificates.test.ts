@@ -30,6 +30,9 @@ describe('certificate inspector with real OpenSSL-generated fixtures', () => {
     expect(result.sans.map(x=>x.value)).toContain('www.certlab.example')
     expect(result.sha256.split(':')).toHaveLength(32)
     expect(result.ca).toBe(false)
+    expect(result.keyUsages).toContain('Digital signature')
+    expect(result.keyUsages).toContain('Key encipherment')
+    expect(result.extendedKeyUsages).toContain('Server authentication')
   })
   it('parses CSR and verifies its signature', async () => {
     const [result] = await inspectPem(csr)
